@@ -311,7 +311,7 @@ class CompassFilter extends BaseSassFilter
             array_push($commandline, '--config', $configFile);
         }
 
-        array_push($commandline, '--sass-dir', '', '--css-dir', '');
+        array_push($commandline, '--sass-dir', '$tempDir', '--css-dir', '$tempDir');
 
         // compass choose the type (sass or scss from the filename)
         if (null !== $this->scss) {
